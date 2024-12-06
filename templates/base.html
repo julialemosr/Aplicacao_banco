@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/static/template.css">
+    <link rel="stylesheet" href="/static/tabela_pessoa.css">
+</head>
+<body>
+<div class="container">
+   <header>
+        <h3>BANCO DE DADOS</h3>
+   </header>
+   <nav>
+      <ul>
+<!--      <li><a href="{{ url_for('pessoa') }}">pessoas</a></li>-->
+          <li><a class="menu_usuario" href="{{ url_for('pessoas') }}"><br>LISTA DE USUÁRIOS</a></li>
+          <br>
+          <li><a class="menu_usuario" href="{{url_for('criar_pessoa')}}">CADASTRO DE USUÁRIOS</a></li>
+          <br>
+          <li><a class="menu_usuario" href="{{url_for('tabela_pessoa')}}">TABELA DE USUÁRIOS</a></li>
+      </ul>
+   </nav>
+
+<main>
+    {% for mensagem in get_flashed_messages()%}
+            {{mensagem}}
+    {% endfor %}
+
+    {% block conteudo%}
+    {% endblock%}
+</main>
+
+</div>
+</body>
+</html>

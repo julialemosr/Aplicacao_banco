@@ -1,0 +1,34 @@
+
+table,td,th {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+td, th {
+  text-align: center;
+  padding: 5px;
+}
+
+th {
+    background-color: #aa025c;
+    color: #fffcfc;
+    font-weight: bold;
+}
+
+td {
+    background-color: #aa025c;
+    color: #fffcfc;
+}
+
+thead, th {
+    font-weight: bold;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+}
+
+table {
+    margin: 0 auto;
+}

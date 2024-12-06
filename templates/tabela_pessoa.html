@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela_pessoa</title>
+    <link rel="stylesheet" href="/static/tabela_pessoa.css">
+</head>
+<body>
+
+{% extends 'base.html' %}
+{% block conteudo%}
+
+<table>
+  <thead>
+    <tr>
+      <th>Nome</th>
+      <th>Sobrenome</th>
+      <th>CPF</th>
+      <th>ID_user</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for item in lista_pessoas %}
+    <tr>
+        <td> {{item.nome}}</td>
+        <td> {{item.sobrenome}}</td>
+        <td> {{item.cpf}}</td>
+        <td> {{item.id_user}}</td>
+    </tr>
+    {% endfor%}
+
+  </tbody>
+</table>
+{% endblock conteudo%}
+</body>
+</html>

@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display:block;
+    width: 100vw;
+    height: 100vh;
+    vertical-align: top;
+}
+
+div h1 {
+    text-align: center;
+}
+
+div li {
+    display:block;
+
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+header {
+    text-align: center;
+    color: white;
+    background-color: #ed165e;
+    display: block;
+    height: 90px;
+    font-size: 40px;
+    border: 2px solid black;
+
+}
+
+nav {
+    text-align: center;
+    background-color: #ed165e;
+    display: inline-block;
+    height: 904px;
+    width: 155px;
+    font-size: 17px;
+    border: 1px solid black;
+    vertical-align: top;
+}
+
+main {
+    width: 80vw;
+    display: inline-block;
+}
+
+
+menu_usuario a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+.cancelar {
+    text-decoration: none;
+    color: black;
+}
+
+.menu_usuario {
+    text-decoration: none;
+    color: white;
+}
+
+.card_itens:hover {
+    background-color: #c1b8b8;
+}
+
+
+

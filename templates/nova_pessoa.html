@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block conteudo%}
+
+<!--Form criar novo evento-->
+<form action="{{url_for('criar_pessoa')}}" method="POST">
+    <br>
+    <label >Nome:</label>
+    <input type="text" name="form-nome">
+    <br>
+    <br>
+    <label >Sobrenome:</label>
+    <input type="text" name="form-sobrenome">
+    <br>
+    <br>
+     <label >CPF:</label>
+    <input type="number" name="form-cpf">
+    <br>
+    <br>
+    <button > Adicionar </button>{% extends 'base.html' %}
+
+{% block conteudo%}
+
+<!--Form criar novo evento-->
+<form action="{{url_for('criar_pessoa')}}" method="POST">
+    <br>
+    <label >Nome:</label>
+    <input type="text" name="form-nome">
+    <br>
+    <br>
+    <label >Sobrenome:</label>
+    <input type="text" name="form-sobrenome">
+    <br>
+    <br>
+     <label >CPF:</label>
+    <input type="number" name="form-cpf">
+    <br>
+    <br>
+    <button > Adicionar </button>
+    <button><a class="cancelar" href="{{url_for('pessoas')}}">Cancelar</a></button>
+</form>
+
+{% endblock conteudo%}
+    <button><a class="cancelar" href="{{url_for('pessoas')}}">Cancelar</a></button>
+</form>
+
+{% endblock conteudo%}
